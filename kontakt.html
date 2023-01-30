@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="kukci, insekt, žohar, insect, člankonožac, gusjenica, leptir">
+  <meta name="description" content="Web stranica o kukcima">
+  <meta name="author" content="Ivan Bilić">
+  <title>Kontakt</title>
+  <style>
+    body {
+        background-color: darkgreen;
+    }
+    .nav {
+        background-color: black;
+        text-align: left;
+        color: white;
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+    }
+    .banner img{
+        width:100%;
+    }
+    .nav a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .text {
+        text-align: center;
+    }
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .input-field {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+      
+      .select-field {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+      
+      .textarea-field {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .submit-button {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .map-container {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+      }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <img src="https://i.imgur.com/6M1jqDT.jpeg" alt="Grasshopper" style="width:100%; height:50%;">
+  </div>      
+  <nav class="nav">
+    <a href="WEB.html">Početna stranica</a>
+    <a href="news.html">Novosti</a>
+    <a href="galerija.html">Fotografije</a>
+    <a href="O nama.html">O nama</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+ <main>
+    <h1>Kontakt forma</h1>
+    <form action="submit-form.php" method="post">
+        <div>
+          <label for="name">Ime:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <hr style="border-color:black;">
+        <div>
+          <label for="lastname">Prezime:</label>
+          <input type="text" id="lastname" name="lastname">
+        </div>
+        <hr style="border-color:black;">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <hr style="border-color:black;">
+        <div>
+          <label for="country">Država porijekla:</label>
+          <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="HR">Hrvatska</option>
+            <option value="SL">Slovenija</option>
+            <option value="IT">Italija</option>
+          </select>
+        </div>
+        <hr style="border-color:black;">
+        <div>
+          <label for="message">Vaša poruka:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <hr style="border-color:black;">
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+        <hr style="border-color:black;">
+      </form>
+      <div>
+        <iframe
+          src="https://maps.google.com/maps?q=your+location&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>  
+ </main> 
+ <footer style="text-align: center;">
+    <p>Copyright &copy; 2022 Ivan Bilić. <a href="https://github.com/dabar95?tab=repositories"><img src="GitHub-Mark.png" title="Github" style="width: 2%; height: 2%;"></a></p>
+</footer>     
